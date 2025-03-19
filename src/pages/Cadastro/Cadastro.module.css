@@ -1,0 +1,51 @@
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 251, 220, 1);
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(1, 87, 30, 1);
+    width: 45vw;
+    height: 75vh;
+    border-radius: 2rem;
+}
+
+.caixaEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: 50%;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.inputs {
+    background-color: rgba(0, 61, 13, 1);
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.inputs::placeholder {
+    color: rgba(255, 251, 220, 1);
+    opacity: 0.4; /* Controla a transparência do placeholder */
+}
+
+.labels {
+    font-size: 12px ;
+}
