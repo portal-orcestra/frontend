@@ -1,0 +1,113 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 100vh;
+    background-color: #FFFBDC;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 66%;
+    height: 80%;
+    border-radius: 40px 50px;
+    background-color: #01571E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.title > h1 {
+    font-weight: 200;
+    color: #FFFBDC;
+    white-space: nowrap;
+}
+
+.title > h2 {
+    color: #3FCC10;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin: 2rem;
+}
+
+.passwordField {
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 3;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    justify-self: center;
+    border: none;
+    border-radius: 40px;
+    background: #3FCC10;
+    padding: 10px 20px;
+    font-weight: 100;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.submitButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.image {
+    display: inline;
+    object-fit: contain;
+    width: 35%;
+}
+
+.topFrame {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.bottomFrame {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+}
+
+@media(max-width: 1425px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .form {
+        gap: 1rem;
+    }
+}
