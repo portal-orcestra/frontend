@@ -13,12 +13,14 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 66%;
-    height: 80%;
+    width: 55vw;/* 66%*/
+    height: 80%;/* 80%*/
     border-radius: 40px 50px;
     background-color: #01571E;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
+    overflow: hidden;
+    min-height: 600px;
 }
 
 .title {
@@ -46,7 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 6rem;
     margin: 2rem;
 }
 
@@ -78,17 +80,20 @@
 .submitButton:hover {
     opacity: 0.7;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .image {
     display: inline;
     object-fit: contain;
-    width: 35%;
+    width: 400px;
+    margin: 20px;
 }
 
 .topFrame {
     position: absolute;
-    height: 100%;
+    height: 80%;
+    width: auto;
     top: 0;
     right: 0;
     z-index: 2;
@@ -97,17 +102,148 @@
 .bottomFrame {
     position: absolute;
     bottom: 0;
-    height: 100%;
+    height: 80%;
     left: 0;
     z-index: 2;
 }
 
-@media(max-width: 1425px) {
+@media(min-width: 1400px) and (max-width: 1555px) {
     .title {
         font-size: 25px;
     }
 
+    .bottomFrame, .topFrame {
+        height: 65%;
+        width: auto;
+    }
+
+    .image {
+        width: 350px;
+    }
+
     .form {
-        gap: 1rem;
+        gap: 4rem;
     }
 }
+
+@media (min-width: 1200px) and (max-width: 1399px) and (orientation: landscape) {
+    .container{
+        width: 66%;
+        height: 80%;
+    }
+
+    .bottomFrame, .topFrame {
+        height: 65%;
+        width: auto;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .image {
+        width: 350px;
+    }
+
+    .form {
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) and (min-height: 646px){
+    .container{
+        width: 66%;
+        height: 70%;
+    }
+
+    .form {
+        gap: 6rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        width: 80%;
+        height: 80%;
+    }
+
+    .ropeImage, .image{
+        display: none;
+    }
+
+    .bottomFrame, .topFrame {
+        height: 65%;
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+    .container{
+        width: 80%;
+        height: 80%;
+    }
+
+    .ropeImage, .image{
+        display: none;
+    }
+
+    .bottomFrame, .topFrame {
+        height: 65%;
+        width: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container{
+        width: 80%;
+        height: 80%;
+    }
+
+    .image, .ropeImage{
+        display: none;
+    }
+
+    .bottomFrame, .topFrame {
+        height: 60%;
+        width: auto;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .image, .ropeImage, .bottomFrame{
+        display: none;
+    }
+
+    .topFrame {
+        height: 40%;
+        top: -5%;
+        right: -5%;
+        width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
