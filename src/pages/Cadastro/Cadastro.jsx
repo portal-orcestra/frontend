@@ -23,6 +23,14 @@ const Cadastro = () => {
                         <input className={styles.inputs} type="email" name="email" id="email" placeholder="Digite seu e-mail "/>
                         <label className={styles.labels} htmlFor="senha">Senha</label>
                         <input className={styles.inputs} type="password" name="senha" id="senha" placeholder="Digite sua senha "/>
+                        <label className={styles.labels} htmlFor="opcoes">Escolha sua Diretoria</label>
+                        <select className={styles.select} name="opcoes" id="opcoes">
+                            <option value="opcao1">DirEx</option>
+                            <option value="opcao2">DiBis</option>
+                            <option value="opcao3">DiCoM</option>
+                            <option value="opcao4">Tops</option>
+                            <option value="opcao5">DiProj</option>
+                        </select>
                         <button className={styles.botao} type="submit">Cadastre-se</button>
                     </form>
                 </div>

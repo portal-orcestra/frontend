@@ -34,7 +34,7 @@
     display: flex;
     background-color: rgba(1, 87, 30, 1);
     width: 45vw;
-    height: 75vh;
+    height: 85vh;
     border-radius: 2rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
@@ -133,3 +133,32 @@
     height: auto;
     z-index: 1; /* Certifica que fica sobre o fundo, mas abaixo de textos */
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .caixaEsquerda {
+        width: 100%;
+        padding: 2rem;
+    }
+    .titulo {
+        font-size: 1.8rem;
+    }
+}
+
+.select {
+    background-color: rgba(0, 61, 13, 1);
+    border-radius: 2rem;
+    border: none;
+    padding: 0.8rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 40px;
+    color: rgba(255, 251, 220, 1);
+}
+
+
