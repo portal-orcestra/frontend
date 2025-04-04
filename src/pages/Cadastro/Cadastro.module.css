@@ -1,0 +1,164 @@
+* {
+    font-family: "Unbounded", sans-serif;
+}
+
+.cadastro {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 251, 220, 1);
+    color: #FFFFFF;
+
+
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 251, 220, 1);
+    font-size: 30px;
+    height: 125px;
+
+}
+
+.spanVerde {
+    color: rgba(46, 182, 0, 1);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    background-color: rgba(1, 87, 30, 1);
+    width: 45vw;
+    height: 85vh;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.caixaEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 2rem;
+    gap: 50px;
+    width: 50%;
+
+    /* Adicionando a imagem de fundo */
+    background-image: url('../../assets/orc.png '); 
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 10vw;
+    height: 30vh;
+    position: relative; /* Mantém os inputs acima da decoração */
+    z-index: 1; /* Certifica que os inputs estão acima da decoração */
+}
+
+.inputs {
+    background-color: rgba(0, 61, 13, 1);
+    border-radius: 2rem;
+    border: none;
+    padding: 0.8rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 28px;
+}
+
+.inputs::placeholder {
+    color: rgba(255, 251, 220, 1);
+    opacity: 0.4; /* Controla a transparência do placeholder */
+}
+
+.labels {
+    font-size: 12px ;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(63, 204, 16, 1);
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.linha {
+    width: 50%;
+    height: 1px;
+    background-color: rgba(0, 61, 13, 1);
+}
+
+.mascote {
+    position: absolute;  /* Fixa o mascote em relação ao container pai */
+    top: 50%;            /* Move o mascote para o centro vertical */
+    right: 0%;          /* Posiciona na direita */
+    transform: translateY(-50%); /* Ajusta para centralizar corretamente */
+    width: 500px;        /* Ajuste conforme necessário */
+    height: auto;        /* Mantém a proporção da imagem */
+    z-index: 10;         /* Garante que fique por cima do container */
+}
+
+.decoracaoEsquerda {
+    position: absolute; 
+    bottom: 0%; /* Posiciona na parte inferior */
+    left: 0%; /* Posiciona na esquerda */
+    width: 400px; /* Ajuste conforme necessário */
+    height: auto;
+    z-index: 0; /* Mantém abaixo das labels e inputs */
+    opacity: 1; /* Opcional: reduz um pouco a opacidade */     
+}
+
+.decoracaoDireita {
+    position: absolute; /* Permite posicionamento em relação ao elemento pai */
+    top: 0%; /* Encosta no topo */
+    right: 0; /* Encosta na direita */
+    width: 350px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    z-index: 1; /* Certifica que fica sobre o fundo, mas abaixo de textos */
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .caixaEsquerda {
+        width: 100%;
+        padding: 2rem;
+    }
+    .titulo {
+        font-size: 1.8rem;
+    }
+}
+
+.select {
+    background-color: rgba(0, 61, 13, 1);
+    border-radius: 2rem;
+    border: none;
+    padding: 0.8rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 40px;
+    color: rgba(255, 251, 220, 1);
+}
+
+
